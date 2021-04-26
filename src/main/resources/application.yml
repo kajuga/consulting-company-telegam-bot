@@ -1,0 +1,30 @@
+bot:
+  clients:
+    name: userBot
+    token: sdfsdfdsfsfs
+  staff:
+    name: forStaffBot
+    token: dfsfsfsfsf
+
+manger:
+  firstName: Ivan
+  lastName: Ivanov
+  phoneNumber: +7874589395345
+
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/tbot}
+    username: ${SPRING_DATASOURCE_USERNAME:admin}
+    password: ${SPRING_DATASOURCE_PASSWORD:admin}
+    maxActive: 10
+    maxIdle: 5
+    minIdle: 2
+    initialSize: 5
+    removeAbandoned: true
+  jpa:
+    showSql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect

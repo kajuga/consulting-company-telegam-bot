@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres:10.1
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: tbot
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
